@@ -20,7 +20,7 @@ source env/bin/activate
 # External deps
 pip install pydantic pydantic-settings pendulum "rich[jupyter]" jupyterlab pandas "fastapi[all]"
 # Internal lib
-pip install git+ssh://git@github.com/Dedimo/metadata_lib.git@main
+pip install git+ssh://git@github.com/jeroenkroesen/metadata_lib.git@main
 ```
 ***
 
