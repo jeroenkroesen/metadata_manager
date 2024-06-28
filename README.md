@@ -33,5 +33,5 @@ mkdir ../metadata
 mkdir ../metadata/stash
 # Repo
 cd ../metadata
-git clone git@github.com:Dedimo/DataPlatform_Metadata.git
+Now clone your metadata repository into a folder here called `DataPlatform_Metadata`
 ```
