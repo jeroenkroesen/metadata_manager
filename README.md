@@ -4,7 +4,7 @@
 
 ### Clone this repo
 ```bash
-git clone git@github.com:Dedimo/metadata_manager.git
+git clone git@github.com:jeroenkroesen/metadata_manager.git
 ```
 ***
 
