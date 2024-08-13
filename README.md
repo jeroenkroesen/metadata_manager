@@ -9,8 +9,13 @@ git clone git@github.com:jeroenkroesen/metadata_manager.git
 ***
 
 ### Create and activate virtual env
+Create
 ```bash
 python3 -m venv env
+```
+
+Activate  
+```bash
 source env/bin/activate
 ```
 ***
