@@ -4,15 +4,13 @@ from rich import print, inspect
 
 def setup_manager(
     root: str = '../metadata',
-    repo: str = '../metadata/DataPlatform_Metadata',
-    repo_data: str= '../metadata/DataPlatform_Metadata/metadata',
+    repo: str = '../metadata/metadata',
     stash: str = '../metadata/stash',
     create: bool = False
 ) -> bool:
     # Load paths
     root = Path(root).resolve()
     repo = Path(repo).resolve()
-    repo_data = Path(repo_data).resolve()
     stash = Path(stash).resolve()
     # Set initial state
     valid = True
@@ -32,14 +30,6 @@ def setup_manager(
     else:
         valid = False
         print(f'[bright_red]WARNING! Repo [bold]does not exist[/bold][/bright_red]')
-    print()
-    print('[bold]Checking Repo Data[/bold]')
-    print(f'Folder: [bright_white]{str(repo_data)}[/bright_white]')
-    if repo_data.exists():
-        print(f'[bright_green]Repo data [bold]exists[/bold][/bright_green]')
-    else:
-        valid = False
-        print(f'[bright_red]WARNING! Repo data [bold]does not exist[/bold][/bright_red]')
     print()
     print('[bold]Checking Stash[/bold]')
     print(f'Folder: [bright_white]{str(stash)}[/bright_white]')
